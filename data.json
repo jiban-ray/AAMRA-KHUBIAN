@@ -1,0 +1,330 @@
+[
+  {
+    "role": "President",
+    "name": "Mohammad Fazle Reza (Sumon)",
+    "nick": "Sumon",
+    "discipline": "URP",
+    "roll": "930409",
+    "photo": "images/candidates/930409.jpg"
+  },
+  {
+    "role": "Vice President",
+    "name": "Md. Ali Zakir",
+    "nick": "Rubel",
+    "discipline": "BBA",
+    "roll": "940338",
+    "photo": "images/candidates/940338.jpeg"
+  },
+  {
+    "role": "Vice President",
+    "name": "Md. Muzahidul Islam (Showrab)",
+    "nick": "Sourav",
+    "discipline": "CSE",
+    "roll": "970232",
+    "photo": "images/candidates/970232.jpeg"
+  },
+  {
+    "role": "Vice President",
+    "name": "A.K.M. Akhtaruzzaman Bosunia (Liton)",
+    "nick": "Liton",
+    "discipline": "FWT",
+    "roll": "970526",
+    "photo": "images/candidates/970526.jpg"
+  },
+  {
+    "role": "Vice President",
+    "name": "Dr. Md. Azizul Hasan",
+    "nick": "Piru",
+    "discipline": "ECE",
+    "roll": "980821",
+    "photo": "images/candidates/980821.jpg"
+  },
+  {
+    "role": "Vice President",
+    "name": "Shakil Alam",
+    "nick": "Shakil",
+    "discipline": "ECE",
+    "roll": "990933",
+    "photo": "images/candidates/990933.jpg"
+  },
+  {
+    "role": "General Secretary",
+    "name": "Md. Shariful Islam",
+    "nick": "Sharif",
+    "discipline": "FWT",
+    "roll": "970518",
+    "photo": "images/candidates/970518.jpg"
+  },
+  {
+    "role": "Joint Secretary General",
+    "name": "Amin Ahmed Arif",
+    "nick": "Sumon",
+    "discipline": "ARCH",
+    "roll": "000106",
+    "photo": "images/candidates/000106.jpeg"
+  },
+  {
+    "role": "Joint Secretary General",
+    "name": "Md. Matiur Rahman",
+    "nick": "Matin",
+    "discipline": "CSE",
+    "roll": "010226",
+    "photo": "images/candidates/010226.png"
+  },
+  {
+    "role": "Organizing Secretary",
+    "name": "Md. Mohiuddin Andalib (Shuvo)",
+    "nick": "Shuvo",
+    "discipline": "Pharmacy",
+    "roll": "001118",
+    "photo": "images/candidates/001118.jpg"
+  },
+  {
+    "role": "Organizing Secretary",
+    "name": "Md. Sathil Islam (Dollar)",
+    "nick": "Dollar",
+    "discipline": "Math",
+    "roll": "001207",
+    "photo": "images/candidates/001207.jpg"
+  },
+  {
+    "role": "Organizing Secretary",
+    "name": "Md. Shafayet Hossain Emon",
+    "nick": "Emon",
+    "discipline": "SWE",
+    "roll": "001325",
+    "photo": ""
+  },
+  {
+    "role": "Treasurer",
+    "name": "Mohammad Iqbal Kabir (Bipul)",
+    "nick": "Bipul",
+    "discipline": "CSE",
+    "roll": "940221",
+    "photo": "images/candidates/940221.jpeg"
+  },
+  {
+    "role": "Office Management Secretary",
+    "name": "Bidhan Chandro Sarker",
+    "nick": "Bidhan",
+    "discipline": "AT",
+    "roll": "000811",
+    "photo": "images/candidates/000811.jpg"
+  },
+  {
+    "role": "Public Relation Secretary",
+    "name": "Md. Shahadot Hossain",
+    "nick": "Sazzad",
+    "discipline": "AT",
+    "roll": "010815",
+    "photo": "images/candidates/010815.jpg"
+  },
+  {
+    "role": "Assistant Public Relation Secretary",
+    "name": "Shaikh Al Mamun",
+    "nick": "Mamun",
+    "discipline": "Pharmacy",
+    "roll": "071109",
+    "photo": "images/candidates/071109.jpg"
+  },
+  {
+    "role": "Assistant Literature and Publication Secretary",
+    "name": "Md. Motiur Rahman",
+    "nick": "Matiur",
+    "discipline": "MCJ",
+    "roll": "162601",
+    "photo": ""
+  },
+  {
+    "role": "Sports & Cultural Secretary",
+    "name": "Imtiaz",
+    "nick": "Imtiaz",
+    "discipline": "URP",
+    "roll": "",
+    "photo": ""
+  },
+  {
+    "role": "Assistant Sports and Cultural Secretary",
+    "name": "Md. Rubel Mahamud",
+    "nick": "Rubel",
+    "discipline": "ECE",
+    "roll": "100904",
+    "photo": "images/candidates/100904.jpg"
+  },
+  {
+    "role": "Student Affairs Secretary",
+    "name": "G M Atiqur Rahman",
+    "nick": "Atik",
+    "discipline": "CSE",
+    "roll": "990227",
+    "photo": ""
+  },
+  {
+    "role": "Joint Secretary Student Affairs",
+    "name": "Md. Touhiduzzaman (Xsumon)",
+    "nick": "Xsumon",
+    "discipline": "BA",
+    "roll": "010346",
+    "photo": "images/candidates/010346.jpg"
+  },
+  {
+    "role": "Information and Technology Secretary",
+    "name": "SM Naim",
+    "nick": "Naim",
+    "discipline": "ECE",
+    "roll": "210914",
+    "photo": "images/candidates/210914.jpg"
+  },
+  {
+    "role": "Joint Secretary Information and Technology",
+    "name": "Md. Tauhidul Islam",
+    "nick": "Touhid",
+    "discipline": "CSE",
+    "roll": "090235",
+    "photo": "images/candidates/090235.jpg"
+  },
+  {
+    "role": "Social Welfare Secretary",
+    "name": "Munsi Shahid Anis",
+    "nick": "Anis",
+    "discipline": "Math",
+    "roll": "011219",
+    "photo": ""
+  },
+  {
+    "role": "Joint Secretary Social Welfare",
+    "name": "Mahamudul Hasan",
+    "nick": "Millat",
+    "discipline": "Stat",
+    "roll": "182029",
+    "photo": "images/candidates/182029.jpg"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Shapla Singha",
+    "nick": "Shapla",
+    "discipline": "DP",
+    "roll": "IFA 120123",
+    "photo": ""
+  },
+  {
+    "role": "Executive Member",
+    "name": "Mostafa Zahid Sharif (Lavlu)",
+    "nick": "Lavlu",
+    "discipline": "BGE",
+    "roll": "950712",
+    "photo": ""
+  },
+  {
+    "role": "Executive Member",
+    "name": "Md. Jakie-Ul Hassan",
+    "nick": "Jakiul",
+    "discipline": "FMRT",
+    "roll": "970604",
+    "photo": "images/candidates/970604.png"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Mohammad Arifur Rahman",
+    "nick": "Arif",
+    "discipline": "ES",
+    "roll": "991036",
+    "photo": "images/candidates/991036.jpg"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Fakrul Alam",
+    "nick": "Fakhrul",
+    "discipline": "Pharmacy",
+    "roll": "991120",
+    "photo": ""
+  },
+  {
+    "role": "Executive Member",
+    "name": "Md. Mahmud Ul Hasan",
+    "nick": "Rana",
+    "discipline": "CSE",
+    "roll": "000212",
+    "photo": "images/candidates/000212.jpg"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Md. Nazmul Karim",
+    "nick": "Nazmul",
+    "discipline": "ECE",
+    "roll": "020921",
+    "photo": "images/candidates/020921.jpg"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Fauzia Sultana",
+    "nick": "Daisy",
+    "discipline": "Arch",
+    "roll": "030131",
+    "photo": "images/candidates/030131.jpeg"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Rabiul Islam",
+    "nick": "Robi",
+    "discipline": "BA",
+    "roll": "070340",
+    "photo": "images/candidates/070340.jpeg"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Md. Farhan Haque (Prince)",
+    "nick": "Prince",
+    "discipline": "FWT",
+    "roll": "080507",
+    "photo": "images/candidates/080507.jpg"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Tonmoy Chatterjee",
+    "nick": "Tonmoy",
+    "discipline": "ARCH",
+    "roll": "090134",
+    "photo": ""
+  },
+  {
+    "role": "Executive Member",
+    "name": "Md. Nazmul Hasan Sheikh",
+    "nick": "Nazmul",
+    "discipline": "BA",
+    "roll": "130328",
+    "photo": ""
+  },
+  {
+    "role": "Executive Member",
+    "name": "Md. Mahmudul Hasan Sohan",
+    "nick": "Sohan",
+    "discipline": "URP",
+    "roll": "150445",
+    "photo": "images/candidates/150445.jpg"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Akhlak Un Nahar",
+    "nick": "Moon",
+    "discipline": "Pharmacy",
+    "roll": "151114",
+    "photo": "images/candidates/151114.jpg"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Md Rafid Rahman",
+    "nick": "Rafid",
+    "discipline": "SOC",
+    "roll": "191652",
+    "photo": "images/candidates/191652.jpg"
+  },
+  {
+    "role": "Executive Member",
+    "name": "Muhibbullah",
+    "nick": "Muhib",
+    "discipline": "Econ",
+    "roll": "201538",
+    "photo": "images/candidates/201538.jpg"
+  }
+]
