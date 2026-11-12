@@ -33,14 +33,47 @@ async function initializeEditableContent(){
  if(m.pdf){const a=document.createElement('a');a.href=m.pdf;a.target='_blank';a.rel='noopener';a.textContent='সম্পূর্ণ ইশতেহার (PDF) দেখুন ↗';document.getElementById('manifestoDownload').appendChild(a)}
  profileDetails=await loadJson('profiles.json',{});
 }
+
 function openProfile(c){
  const d=profileDetails[c.roll]||{};
- const fields=[['পেশাগত পরিচিতি',d.profession],['সাংগঠনিক কার্যক্রম',d.organization],['সামাজিক ও কল্যাণমূলক কাজ',d.socialWelfare],['KUAA-তে সম্পৃক্ততা',d.kuaaInvolvement],['KUAA সদস্যপদ',d.membershipStatus],['অন্যান্য তথ্য',d.other]];
- const body=fields.filter(x=>x[1]).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
- const gallery=(d.activityPhotos||[]).map(x=>`<img src="${esc(x)}" loading="lazy" alt="${esc(c.name)} activity">`).join('');
- document.getElementById('profileContent').innerHTML=`<div class="profile-head">${c.photo?`<img src="${esc(c.photo)}" alt="${esc(c.name)}">`:''}<div><div class="role">${esc(c.role)}</div><h2>${esc(c.name)}</h2><p>${esc(c.discipline)} · ${esc(c.roll)}</p></div></div>${body?`<dl class="profile-info">${body}</dl>`:'<p class="note">বিস্তারিত পরিচিতি এখনও যুক্ত হয়নি।</p>'}${gallery?`<h3>কার্যক্রমের ছবি</h3><div class="profile-gallery">${gallery}</div>`:''}`;
+
+ const fields=[
+  ['পেশাগত পরিচিতি',d.profession],
+  ['সাংগঠনিক কার্যক্রম',d.organization],
+  ['সামাজিক ও কল্যাণমূলক কাজ',d.socialWelfare],
+  ['KUAA-তে সম্পৃক্ততা',d.kuaaInvolvement],
+  ['KUAA সদস্যপদ',d.membershipStatus],
+  ['অন্যান্য তথ্য',d.other]
+ ];
+
+ const body=fields.filter(x=>x[1])
+  .map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`)
+  .join('');
+
+ const website=d.website && /^https?:\/\//i.test(d.website)
+  ? `<dt>ওয়েবসাইট</dt><dd><a href="${esc(d.website)}" target="_blank" rel="noopener noreferrer" style="color:#1456a0;font-weight:700;text-decoration:underline;">🌐 EKUAA ওয়েবসাইট দেখুন ↗</a></dd>`
+  : '';
+
+ const gallery=(d.activityPhotos||[])
+  .map(x=>`<img src="${esc(x)}" loading="lazy" alt="${esc(c.name)} activity">`)
+  .join('');
+
+ document.getElementById('profileContent').innerHTML=`
+  <div class="profile-head">
+   ${c.photo?`<img src="${esc(c.photo)}" alt="${esc(c.name)}">`:''}
+   <div>
+    <div class="role">${esc(c.role)}</div>
+    <h2>${esc(c.name)}</h2>
+    <p>${esc(c.discipline)} · ${esc(c.roll)}</p>
+   </div>
+  </div>
+  ${body||website?`<dl class="profile-info">${body}${website}</dl>`:'<p class="note">বিস্তারিত পরিচিতি এখনও যুক্ত হয়নি।</p>'}
+  ${gallery?`<h3>কার্যক্রমের ছবি</h3><div class="profile-gallery">${gallery}</div>`:''}
+ `;
+
  document.getElementById('profileDialog').showModal();
 }
+
 document.getElementById('candidateGroups').addEventListener('click',e=>{const btn=e.target.closest('.profile-link');if(!btn)return;const c=candidates.find(x=>x.roll===btn.dataset.roll);if(c)openProfile(c)});
 document.getElementById('closeProfile').addEventListener('click',()=>document.getElementById('profileDialog').close());
 initializeEditableContent();
