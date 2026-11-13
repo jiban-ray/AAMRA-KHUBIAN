@@ -31,7 +31,9 @@ async function initializeEditableContent(){
  if(m.implementation){const p=document.createElement('p');p.className='manifesto-implementation';p.textContent=m.implementation;holder.appendChild(p)}
  if(m.closing){const title=document.createElement('h3');title.textContent='আমাদের শেষ কথা';holder.appendChild(title);const p=document.createElement('p');p.className='manifesto-closing';p.textContent=m.closing;holder.appendChild(p)}
  if(m.pdf){const a=document.createElement('a');a.href=m.pdf;a.target='_blank';a.rel='noopener';a.textContent='সম্পূর্ণ ইশতেহার (PDF) দেখুন ↗';document.getElementById('manifestoDownload').appendChild(a)}
- profileDetails=await loadJson('profiles.json',{});
+profileDetails=await loadJson('profiles.json?v=2',{});
+console.log('Loaded candidate profiles:', Object.keys(profileDetails));
+
 }
 
 function openProfile(c){
