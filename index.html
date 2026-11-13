@@ -48,9 +48,26 @@ function openProfile(c){
   ['অন্যান্য তথ্য',d.other]
  ];
 
- const body=fields.filter(x=>x[1])
-  .map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`)
+
+const body=fields.filter(x=>x[1])
+  .map(([k,v])=>{
+    if(k==='অন্যান্য তথ্য' && c.roll==='210914'){
+      const items=String(v)
+        .replace(/^প্রস্তাবিত উদ্যোগ:\s*/, '')
+        .split(/\s*[১-৪]\.\s*/)
+        .map(s=>s.trim())
+        .filter(Boolean);
+
+      return `<dt>পরিকল্পনা ও অঙ্গীকার</dt>
+        <dd><ul style="padding-left:22px;line-height:1.9;margin:8px 0;">
+          ${items.map(item=>`<li>${esc(item)}</li>`).join('')}
+        </ul></dd>`;
+    }
+
+    return `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`;
+  })
   .join('');
+
 
  const website=d.website && /^https?:\/\//i.test(d.website)
   ? `<dt>ওয়েবসাইট</dt><dd><a href="${esc(d.website)}" target="_blank" rel="noopener noreferrer" style="color:#1456a0;font-weight:700;text-decoration:underline;">🌐 EKUAA ওয়েবসাইট দেখুন ↗</a></dd>`
